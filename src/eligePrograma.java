@@ -79,6 +79,58 @@ public class eligePrograma {
 
                          break;
 
+                    case 3:
+                         System.out.println("Que operación deseas realizar?");
+                         System.out.println("1: Suma" + "\n" +
+                                            "2: Resta" + "\n" +
+                                            "3: Multiplicación" + "\n" +
+                                            "4: División");
+                         System.out.print(": ");
+
+                         int arit = scanner.nextInt();
+                         float resultado = 0.0f;
+                         float a= 0.0f;
+                         float b= 0.0f;
+                         switch (arit){
+                              case 1:
+                                   System.out.print("Ingresa primer valor: ");
+                                   a = scanner.nextFloat();
+                                   System.out.print("Ingresa segundo valor: ");
+                                   b = scanner.nextFloat();
+                                   resultado = (a+b);
+                                   System.out.print("El resultado de la suma es: " + resultado);
+                                   break;
+                              case 2:
+                                   System.out.print("Ingresa primer valor: ");
+                                   a = scanner.nextFloat();
+                                   System.out.print("Ingresa segundo valor: ");
+                                   b = scanner.nextFloat();
+                                   resultado = (a-b);
+                                   System.out.print("El resultado de la resta es: " + resultado);
+                                   break;
+                              case 3:
+                                   System.out.print("Ingresa primer valor: ");
+                                   a = scanner.nextFloat();
+                                   System.out.print("Ingresa segundo valor: ");
+                                   b = scanner.nextFloat();
+                                   resultado = (a*b);
+                                   System.out.print("El resultado de la multiplicacion es: " + resultado);
+                                   break;
+                              case 4:
+                                   System.out.print("Ingresa primer valor: ");
+                                   a = scanner.nextFloat();
+                                   System.out.print("Ingresa segundo valor: ");
+                                   b = scanner.nextFloat();
+                                   resultado = (a/b);
+                                   System.out.print("El resultado de la divicion es: " + resultado);
+                                   break;
+
+                              default:
+                                   System.out.println("Operacion invalida");
+                                   break;
+
+                         }// fin del switch
+
 
 
 
