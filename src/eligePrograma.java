@@ -53,6 +53,35 @@ public class eligePrograma {
                          System.out.println(mensaje);
 
                          break;
+
+                    case 2:
+                         int[] numeros;
+                         System.out.println("Elige la cantidad de elementos del arreglo");
+                         int cantidad = scanner.nextInt();
+                         numeros = new int[cantidad];
+
+                         for (int i=0; i< numeros.length; i++){
+                              System.out.println("Ingresa valor para indice:" + i);
+                              System.out.print(": ");
+                              numeros[i] = scanner.nextInt();
+                         }
+                         // mostrar los elementos del arreglo
+                         System.out.println("valores contenidos en el arreglo");
+                         for (int i=0; i< numeros.length; i++){
+                              System.out.println(numeros[i]);
+                         }
+                         int mayor =0;
+                         for(int i=0; i<numeros.length; i++){
+                              mayor = numeros[mayor] > numeros[i] ? mayor : i;
+                         }
+
+                         System.out.print("El numero mayor contenido en el arreglo es: " + numeros[mayor]);
+
+                         break;
+
+
+
+
                }
           }else { //fin de if valida
                System.out.println("Requiere validar");
