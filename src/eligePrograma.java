@@ -91,50 +91,64 @@ public class eligePrograma {
                          float resultado = 0.0f;
                          float a= 0.0f;
                          float b= 0.0f;
-                         switch (arit){
-                              case 1:
+                         //switch (arit){
+                         if (arit == 1) {
+                              //case 1:
                                    System.out.print("Ingresa primer valor: ");
                                    a = scanner.nextFloat();
                                    System.out.print("Ingresa segundo valor: ");
                                    b = scanner.nextFloat();
                                    resultado = (a+b);
                                    System.out.print("El resultado de la suma es: " + resultado);
-                                   break;
-                              case 2:
+                                   //break;
+                         } else if (arit == 2) {
+                             // case 2:
                                    System.out.print("Ingresa primer valor: ");
                                    a = scanner.nextFloat();
                                    System.out.print("Ingresa segundo valor: ");
                                    b = scanner.nextFloat();
                                    resultado = (a-b);
                                    System.out.print("El resultado de la resta es: " + resultado);
-                                   break;
-                              case 3:
+                                   //break;
+
+                         } else if (arit == 3) {
+                             // case 3:
                                    System.out.print("Ingresa primer valor: ");
                                    a = scanner.nextFloat();
                                    System.out.print("Ingresa segundo valor: ");
                                    b = scanner.nextFloat();
                                    resultado = (a*b);
                                    System.out.print("El resultado de la multiplicacion es: " + resultado);
-                                   break;
-                              case 4:
+                                  // break;
+
+                         } else if (arit == 4) {
+                              //case 4:
                                    System.out.print("Ingresa primer valor: ");
                                    a = scanner.nextFloat();
                                    System.out.print("Ingresa segundo valor: ");
                                    b = scanner.nextFloat();
                                    resultado = (a/b);
                                    System.out.print("El resultado de la divicion es: " + resultado);
+                                 //  break;
+
+                         }else {
+                              //default:
+                                   System.out.println("Operacion invalida");
+                                  // break;
+                         }
+                         case 4:
+                                   System.out.print("Ingresa el diametro de un circulo: ");
+                                   double radio = scanner.nextDouble();
+
+                                   double area =0.0;
+
+                                   area = Math.PI * Math.pow(radio,2);
+                                   System.out.print("El area el circulo es: " + area);
                                    break;
 
-                              default:
-                                   System.out.println("Operacion invalida");
-                                   break;
 
                          }// fin del switch
 
-
-
-
-               }
           }else { //fin de if valida
                System.out.println("Requiere validar");
           }// fin del else
